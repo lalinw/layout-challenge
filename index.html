@@ -8,7 +8,7 @@ INFO 343
 
     <head>
         <title>Dawg Pizza</title>
-        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="icon" type="image/png" href="img/pizza-icon.png">
     </head>
@@ -17,43 +17,65 @@ INFO 343
         <main>
             <header>
                 <h1>Dawg Pizza</h1>
-                <h4>Feeding Hungry Huskies Since 2013</h4>
+                <h4 >Feeding Hungry Huskies Since 2013</h4>
+                <nav role="navigation">
+                    <ul>
+                        <li><a href="#location">location</a></li>
+                        <li><a href="#menu">menu</a></li>
+                        <li><a href="#about">about</a></li>
+                    </ul>
+                </nav>
             </header>
-            <div id="info">
-                <h2>Address</h2>
-                <p><a href="https://goo.gl/maps/CKrRF">4529 University Way NE<br/>Seattle, WA 98105</a></p>
-                <h2>Hours</h2>
-                <p>Open daily from noon to midnight</p>
-                <h2>To Order</h2>
-                <p><a href="tel:206-555-1212">Call us 206-555-1212</a></p>
+            <div id="location" class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4"> 
+                        <h2>Address</h2>
+                        <p><a href="https://goo.gl/maps/CKrRF">4529 University Way NE<br/>Seattle, WA 98105</a></p>
+                    </div>
+                    <div class="col-md-4"> 
+                        <h2>Hours</h2>
+                        <p>Open daily from noon to midnight</p>
+                    </div>
+                    <div class="col-md-4"> 
+                        <h2>To Order</h2>
+                        <p>Call us at <a href="tel:206-555-1212">206-555-1212</a></p>
+                    </div>
+            </div>
             </div>
             <div id="menu">
                 <h2>Our Menu</h2>
                 
-                <h3>Meat Pies</h3>
-                    <dl>
-                        <dt>Bacon &amp; Pineapple</dt>
-                        <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut urna id massa tempus egestas et at ipsum. Praesent quis gravida ipsum. Mauris fermentum lorem ut leo pulvinar laoreet.</dd>
-                        <dt>Duck, Duck, Goose</dt>
-                        <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut urna id massa tempus egestas et at ipsum. Praesent quis gravida ipsum. Mauris fermentum lorem ut leo pulvinar laoreet.</dd>
-                        <dt>The Bambi</dt>
-                        <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut urna id massa tempus egestas et at ipsum. Praesent quis gravida ipsum. Mauris fermentum lorem ut leo pulvinar laoreet.</dd>
-                    </dl>
-                
-                <h3>Veggie Pies</h3>
-                    <dl>
-                        <dt>Forest Floor</dt>
-                        <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut urna id massa tempus egestas et at ipsum. Praesent quis gravida ipsum. Mauris fermentum lorem ut leo pulvinar laoreet.</dd>
-                        <dt>Green Monster</dt>
-                        <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut urna id massa tempus egestas et at ipsum. Praesent quis gravida ipsum. Mauris fermentum lorem ut leo pulvinar laoreet.</dd>
-                        <dt>Caprese</dt>
-                        <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut urna id massa tempus egestas et at ipsum. Praesent quis gravida ipsum. Mauris fermentum lorem ut leo pulvinar laoreet.</dd>
-                    </dl>
+                <div id="info" class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Meat Pies</h3>
+                            <dl>
+                                <dt>Bacon &amp; Pineapple</dt>
+                                <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut urna id massa tempus egestas et at ipsum. Praesent quis gravida ipsum. Mauris fermentum lorem ut leo pulvinar laoreet.</dd>
+                                <dt>Duck, Duck, Goose</dt>
+                                <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut urna id massa tempus egestas et at ipsum. Praesent quis gravida ipsum. Mauris fermentum lorem ut leo pulvinar laoreet.</dd>
+                                <dt>The Bambi</dt>
+                                <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut urna id massa tempus egestas et at ipsum. Praesent quis gravida ipsum. Mauris fermentum lorem ut leo pulvinar laoreet.</dd>
+                            </dl>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Veggie Pies</h3>
+                            <dl>
+                                <dt>Forest Floor</dt>
+                                <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut urna id massa tempus egestas et at ipsum. Praesent quis gravida ipsum. Mauris fermentum lorem ut leo pulvinar laoreet.</dd>
+                                <dt>Green Monster</dt>
+                                <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut urna id massa tempus egestas et at ipsum. Praesent quis gravida ipsum. Mauris fermentum lorem ut leo pulvinar laoreet.</dd>
+                                <dt>Caprese</dt>
+                                <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut urna id massa tempus egestas et at ipsum. Praesent quis gravida ipsum. Mauris fermentum lorem ut leo pulvinar laoreet.</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="about">
                 <h2>About Us</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut urna id massa tempus egestas et at ipsum. Praesent quis gravida ipsum. Mauris fermentum lorem ut leo pulvinar laoreet. Praesent commodo libero a consectetur malesuada. Vivamus consequat, quam id efficitur posuere, magna leo dapibus turpis, in posuere odio sapien non erat. Etiam eleifend libero in augue facilisis blandit. In varius at sem in viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec eget convallis leo, vel tincidunt dolor. Aliquam erat volutpat. Sed vitae metus malesuada, pulvinar mi eu, efficitur turpis. Donec tincidunt, nisl ac ullamcorper dictum, urna ante ultricies leo, id porttitor nunc lacus a erat. Morbi lacinia neque quis sodales elementum. Donec vitae semper lorem, eu viverra lectus. Sed ante libero, placerat et volutpat et, laoreet id risus.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut urna id massa tempus egestas et at ipsum. Praesent quis gravida ipsum. Mauris fermentum lorem ut leo pulvinar laoreet. Praesent commodo libero a consectetur malesuada. Vivamus consequat, quam id efficitur posuere, magna leo dapibus turpis, in posuere odio sapien non erat. Etiam eleifend libero in augue facilisis blandit. In varius at sem in viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec eget convallis leo, vel tincidunt dolor. Aliquam erat volutpat. Sed vitae metus malesuada, pulvinar mi eu, efficitur turpis. Donec tincidunt, nisl ac ullamcorper dictum, urna ante ultricies leo, id porttitor nunc lacus a erat. Morbi lacinia neque quis sodales elementum. Donec vitae semper lorem, eu viverra lectus. Sed ante libero, placerat et volutpat et, laoreet id risus.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut urna id massa tempus egestas et at ipsum. Praesent quis gravida ipsum. Mauris fermentum lorem ut leo pulvinar laoreet. Praesent commodo libero a consectetur malesuada. Vivamus consequat, quam id efficitur posuere, magna leo dapibus turpis, in posuere odio sapien non erat. Etiam eleifend libero in augue facilisis blandit. In varius at sem in viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec eget convallis leo, vel tincidunt dolor.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut urna id massa tempus egestas et at ipsum. Praesent quis gravida ipsum. Mauris fermentum lorem ut leo pulvinar laoreet. Praesent commodo libero a consectetur malesuada. Vivamus consequat, quam id efficitur posuere, magna leo dapibus turpis, in posuere odio sapien non erat. Etiam eleifend libero in augue facilisis blandit. In varius at sem in viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec eget convallis leo, vel tincidunt dolor.</p>
             </div>
             
             <footer>

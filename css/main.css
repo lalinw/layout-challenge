@@ -8,18 +8,84 @@ INFO 343
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400);
 
 
-body {
-    background: url('../img/background.jpg');
-    background-size: 100% 100%;
-    background-attachment: fixed;
+
+
+/* screen based settings */
+
+@media screen and (min-width: 992px) {
+    body {
+        background: url('../img/background.jpg');
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+
+    main {
+        margin-left: 30%;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+
+    p, dt, dd {
+        font-size: 18px;
+    }
+
+    header nav {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+    h4 {
+        display: none;
+    }
+
+    .container-fluid {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
 }
 
 
+
+
+
+/* navigation */
+
+nav ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+nav a:link {
+    color: #55E;
+}
+
+nav a:visited {
+    color: #55E;
+}
+
+nav a:hover {
+    color: #00E;
+}
+
+
+
+
+
+/* main */
+
 main {
-    margin-left: 30%;
-    margin-bottom: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
     background-image: url('../img/ricepaper_v3.png');
     opacity: 0.9;
 }
@@ -32,18 +98,26 @@ header {
     color: #FFFFFF;
 }
 
-header, footer, #info, #menu, #about {
+header, footer, #location, #menu, #about {
     padding: 1em;
 }
 
-p, dt, dd {
-    font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 18px;
-    font-weight: 300;
+#location {
+    margin-left: 10px;
 }
 
 #menu {
     background-color: rgba(207,205,140,0.5);    
+}
+
+#info {
+    margin-left: -15px;
+}
+
+p, dt, dd {
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
 }
 
 address {
@@ -72,6 +146,8 @@ dd {
 
 
 
+
+
 /* links */
 
 a:link {
@@ -91,6 +167,9 @@ a:hover {
 input:focus {
     color: #0000EE;
 }
+
+
+
 
 
 /* headings */
